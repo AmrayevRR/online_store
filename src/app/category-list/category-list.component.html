@@ -1,0 +1,11 @@
+<div class="categories-general-container">
+  <h2>Categories: </h2>
+
+  <ul>
+    <li *ngFor="let category of categories">
+      <h3>
+        <a [routerLink] ="['', category.title]">{{category.title | titlecase}}</a>
+      </h3>
+    </li>
+  </ul>
+</div>

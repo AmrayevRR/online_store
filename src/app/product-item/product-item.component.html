@@ -1,0 +1,29 @@
+<h3 class="product-name">
+  <a [title]="product.name + ' details'" [routerLink] ="['/' + category.title, product.id]">
+    {{product.name}}
+  </a>
+</h3>
+
+<img *ngIf="product.images" src="{{product.images[0]}}" alt="" class="product-image">
+
+<div class="product-price-rating">
+  <h4 class="product-price">{{product.price | currency}}</h4>
+  <div class = "stars">
+    <i *ngFor="let star of product.stars" class="{{star}}"></i>
+  </div>
+</div>
+
+<button (click)="shareProduct(product.id)" class="share-button">
+  Share
+</button>
+
+<button (click)="removeProduct()" class="remove-button">
+  Remove
+</button>
+
+<i class="fas fa-heart" (click) = "product.isLiked = !product.isLiked; changeLikes()" [class.empty-heart] = "!product.isLiked"></i>
+<h4 class = "likes">Likes: {{product.likes}}</h4>
+
+<!--<app-product-alerts
+  [product]="product" (notify)="onNotify()" class="notify-button">
+</app-product-alerts>-->

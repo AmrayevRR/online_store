@@ -1,0 +1,20 @@
+<div class = "product-details-container">
+  <h2>Product details</h2>
+
+  <div *ngIf="product">
+    <h3>{{product.name}}</h3>
+    <div class="gallery">
+      <img (mouseover)="changeCurrentIndex(i)" *ngFor="let im of product.images; let i = index" src="{{im}}" alt="" class="image-from-gallery">
+    </div>
+    <img *ngIf="product.images" src="{{product.images[indexOfCurrentImage]}}" alt="" class="current-image">
+    <h4>{{product.price | currency}}</h4>
+    <p>{{product.description}}</p>
+    <div class = "rating">
+      <i *ngFor="let star of product.stars" class="{{star}}"></i>
+      <h4 class = "number-rating">{{product.rating}}</h4>
+    </div>
+    <button>
+      <a href="{{product.link}}" class="buy-button">Buy</a>
+    </button>
+  </div>
+</div>

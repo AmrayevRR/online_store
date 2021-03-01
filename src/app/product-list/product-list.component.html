@@ -1,0 +1,17 @@
+<div class="products-general-container">
+  <h2>{{category.title | titlecase}}</h2>
+
+  <div class="product-list-container">
+    <div *ngFor="let product of products; let i = index;" class="product">
+
+      <app-product-item
+        [product]="product"
+        [category]="category"
+        [positionInArray]="i"
+        (share)="onShare($event)"
+        (remove)="onRemove($event)"></app-product-item>
+
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,54 @@
+
+.product-image {
+  height: 200px;
+  max-width: 300px;
+}
+
+.share-button, .remove-button{
+  float: left;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.stars {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.fa-star, .fa-star-half-alt {
+  color: gold;
+}
+
+.empty-star {
+  font-weight: lighter;
+}
+
+.product-name {
+  max-height: 172px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-price-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.empty-heart {
+  font-weight: lighter;
+}
+
+.fa-heart {
+  float: left;
+  margin-top: 25px;
+  margin-right: 10px;
+  margin-left: 25px;
+  color: red;
+}
+
+.likes {
+  float: left;
+  margin-top: 25px;
+}

@@ -1,0 +1,46 @@
+.empty-star {
+  font-weight: lighter;
+}
+
+.product-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.fas {
+  float: left;
+}
+
+.fa-star, .fa-star-half-alt{
+  color: gold;
+}
+.number-rating {
+  padding-left: 95px;
+}
+
+.image-from-gallery {
+  max-height: 50px;
+  max-width: 100px;
+  padding-left: 20px;
+}
+
+.image-from-gallery:hover {
+}
+
+.gallery {
+  margin-bottom: 20px;
+}
+
+.current-image {
+  max-height: 500px;
+  max-width: 700px;
+  padding-right: 20px;
+}
+
+.buy-button {
+  color: white;
+}
+
